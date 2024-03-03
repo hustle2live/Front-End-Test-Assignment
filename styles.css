@@ -141,6 +141,7 @@ body {
 
 button {
    box-sizing: border-box;
+   cursor: pointer;
 }
 
 button {
@@ -154,6 +155,7 @@ button:active {
    opacity: 0.8;
 }
 
+.input-custon input[type='number'],
 button {
    background: #f2f5f5;
    border-radius: 8px;
@@ -200,7 +202,6 @@ button {
 .item_description {
    flex-direction: column;
    margin-top: 80px;
-   margin-left: 44px;
 }
 
 .primary {
@@ -210,10 +211,104 @@ button {
 }
 
 .secondary {
+   margin-left: 44px;
    width: 304px;
    height: 420px;
    left: 360px;
    padding: 24px 0px 24px 0px;
    border-radius: 8px;
    justify-content: space-between;
+}
+
+.radio-select ul {
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   gap: 12px;
+   width: 290px;
+}
+
+.radio-select ul {
+   padding: 0;
+}
+.radio-select ul li {
+   list-style-type: none;
+}
+
+input.radio:not(label) {
+   width: 20px;
+   height: 20px;
+   border-radius: none;
+   visibility: hidden;
+   position: absolute;
+}
+
+.btn-custon,
+.radio-select label {
+   position: relative;
+   display: block;
+   box-sizing: border-box;
+   margin: 0;
+   width: 48px;
+   height: 32px;
+   padding: 9px 10px 9px 13px;
+   border-radius: 4px;
+   background: #e0ecf0;
+   text-align: center;
+   font-family: 'SF Pro Text';
+   font-weight: 700;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.btn-custon {
+   width: 108px;
+   text-align: center;
+   padding: 9px 0;
+}
+
+.btn-custon.active,
+.radio:checked + label {
+   background: #146b87 !important;
+   color: #ffffff;
+}
+
+.input-custon {
+   display: flex;
+   gap: 8px;
+}
+
+.input-custon input::-webkit-outer-spin-button,
+.input-custon input::-webkit-inner-spin-button {
+   /* -webkit-appearance: none; */
+   margin: 0;
+}
+
+.input-custon input[type='number'] {
+   /* font-family: 'SF Pro Text'; */
+   padding: 0;
+   margin: 0;
+   width: 64px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: 0em;
+   position: relative;
+   z-index: 0;
+   /* -moz-appearance: textfield; */
+}
+
+.input-custon input[type='number']::after {
+   position: absolute;
+   display: block;
+   content: '+++';
+   font-size: 16px;
+   font-weight: 400;
+   background: #eb1595;
+   color: yellow;
+   z-index: 2;
+   width: 64px;
+   height: 64px;
+   left: 0;
+   bottom: 0;
 }
