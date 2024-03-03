@@ -213,7 +213,7 @@ button {
    width: 304px;
    height: 420px;
    left: 360px;
-   padding: 24px, 0px, 24px, 0px;
+   padding: 24px 0px 24px 0px;
    border-radius: 8px;
    justify-content: space-between;
 }
