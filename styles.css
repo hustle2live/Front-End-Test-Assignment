@@ -1,0 +1,33 @@
+body {
+}
+
+.container {
+   max-width: 1360px;
+   width: 1360px;
+   margin: 0 auto;
+}
+.pagelink {
+}
+.link-icon {
+}
+
+.content {
+   display: grid;
+   grid-template-columns: 652px 664px;
+   gap: 44px;
+}
+
+.item_description {
+   display: flex;
+}
+
+.item_gallery {
+}
+.item_description {
+}
+.item_heading {
+}
+.primary {
+}
+.secondary {
+}
