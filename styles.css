@@ -1,4 +1,5 @@
 body {
+   background: #c2c2c23b;
 }
 
 .container {
@@ -7,9 +8,10 @@ body {
    margin: 0 auto;
    height: 900px;
    padding: 32px 0;
+   background: #ffffff;
 }
 .pagelink {
-   /* font-family: "SF Pro Text"; */
+   font-family: 'SF Pro Text';
    margin: 0;
    margin-bottom: 48px;
    font-size: 12px;
@@ -17,6 +19,7 @@ body {
    text-transform: uppercase;
    display: inline-block;
 }
+
 .pagelink_navlink {
    text-decoration: none;
    color: #697071;
@@ -150,6 +153,7 @@ body {
    top: 10px;
 }
 
+.caption-expander,
 div.button,
 button {
    box-sizing: border-box;
@@ -167,6 +171,7 @@ button:active {
    opacity: 0.8;
 }
 
+.caption-expander,
 input[type='number'],
 button {
    box-sizing: border-box;
@@ -210,6 +215,7 @@ button {
 
 .item_heading {
    display: block;
+   width: 100%;
    margin: 0;
    font-family: Montserrat;
    font-size: 40px;
@@ -259,10 +265,17 @@ input.radio:not(label) {
    position: absolute;
 }
 
+.additional-options .caption,
+.caption-expander {
+   display: none;
+}
+
 .btn-custon,
 .radio-select label {
    position: relative;
-   display: block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    box-sizing: border-box;
    margin: 0;
    width: 48px;
@@ -426,11 +439,17 @@ input[type='checkbox']:checked ~ label::before {
    width: 100%;
    height: 1px;
    background: #d6dcdd;
-   margin: 7px 0;
+   margin: 8px 0;
 }
 
 .stock-data,
 .item-ratio-data {
+   display: flex;
+   box-sizing: border-box;
+   align-items: center;
+   height: 32px;
+   border-radius: 4px;
+   padding: 8px 12px;
    font-family: Montserrat;
    font-size: 14px;
    font-weight: 700;
@@ -463,12 +482,6 @@ input[type='checkbox']:checked ~ label::before {
 
 .stock-data,
 .item-ratio-data {
-   display: flex;
-   box-sizing: border-box;
-   align-items: center;
-   height: 32px;
-   border-radius: 4px;
-   padding: 8px 12px;
 }
 
 .item-ratio-data {
@@ -621,4 +634,169 @@ button:disabled svg {
    border-radius: 8px;
    box-shadow: 0px 4px 20px 0px #0000001f;
    z-index: 1;
+}
+
+.nowrap {
+   white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+   .content,
+   .container {
+      max-width: 360px;
+   }
+
+   .container {
+      position: relative;
+      height: auto;
+   }
+
+   .content {
+      grid-template-columns: 1fr;
+      gap: 0;
+      height: auto;
+      width: 100%;
+      margin-top: 88px;
+   }
+
+   .item_description secondary {
+      margin-left: 0;
+   }
+
+   .item_gallery {
+      max-width: inherit;
+   }
+
+   .image_wrapper {
+      width: 100%;
+      height: 240px;
+   }
+
+   .image_wrapper img {
+      /* max-width: 100%; */
+      height: auto;
+      width: 100%;
+   }
+
+   .image_option__list button,
+   .expand,
+   .select-buttons,
+   .image-counter {
+      display: none;
+   }
+
+   .image-description {
+      left: 16px;
+      bottom: 16px;
+      font-size: 10px;
+      line-height: 10px;
+      width: 155px;
+      margin: 0;
+   }
+
+   .image_option__list ul li {
+      min-width: 70px;
+      width: 70px;
+      height: 48px;
+   }
+
+   .pagelink {
+      margin: 0 20px 32px;
+   }
+   .pagelink_icon {
+      margin: 0 6px;
+   }
+
+   .item_heading {
+      font-size: 32px;
+      line-height: 32px;
+      margin: 0 20px;
+      order: -2;
+      position: absolute;
+      top: 82px;
+      width: 320px;
+      height: 64px;
+   }
+
+   .item_description.primary {
+      margin: 0 20px;
+      height: auto;
+   }
+
+   .item_description.secondary {
+      margin: 40px 0;
+      width: 100%;
+      height: auto;
+   }
+
+   .stock-data {
+      width: 125px;
+   }
+   .item-ratio-data {
+      width: 182px;
+   }
+
+   .item-ratio-data a span {
+      display: none;
+   }
+   .item_description.secondary > div {
+      justify-content: space-between;
+      padding: 20px;
+   }
+
+   .item_description.secondary .divider {
+      margin: 12px 0;
+   }
+
+   .item-price,
+   .item-details {
+      order: -1;
+   }
+
+   .item-details {
+      margin-top: -4px;
+   }
+
+   input[type='number'] {
+      width: 100%;
+   }
+
+   .size_select {
+      gap: 20px;
+   }
+
+   .radio-select ul {
+      gap: 16px;
+   }
+   .btn-custon,
+   .radio-select label {
+      height: 44px;
+      border-radius: 8px;
+   }
+   .radio-select label {
+      width: 44px;
+   }
+
+   .size_select.custom {
+      margin-top: 16px;
+   }
+
+   .additional-options .caption,
+   .caption-expander {
+      display: flex;
+      margin-bottom: 11px;
+   }
+   .caption-expander {
+      font-family: SF Pro Text;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      width: 100%;
+      padding: 15px 16px;
+      border: 1px solid #d6dcdd;
+   }
+   .caption-expander img {
+      margin: auto;
+      margin-right: 0;
+   }
 }
