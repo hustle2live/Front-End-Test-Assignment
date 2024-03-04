@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
    margin: 0;
    padding: 0;
+}
+
+body,
+div,
+label,
+input,
+p,
+a,
+button,
+.caption-expander,
+.btn-custom,
+.radio-select label,
+.pagelink,
+.additional-options fieldset li,
+.sku-data,
+.item-price,
+input[type='number'],
+.item-details,
+.info-text .tooltip {
+   font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 .container {
@@ -15,7 +38,6 @@ body {
 }
 
 .pagelink {
-   font-family: 'SF Pro Text';
    margin: 0;
    margin-bottom: 48px;
    font-size: 12px;
@@ -139,19 +161,33 @@ body {
    display: block;
 }
 
+.select-buttons button {
+   margin-left: 12px;
+}
+
 .select-buttons,
 .expand {
-   right: 10px;
+   right: 16px;
+}
+
+.image-description {
+   font-size: 10px;
+   color: #697071;
 }
 
 .image-description,
 .select-buttons {
-   bottom: 10px;
+   bottom: 16px;
 }
 
 .expand,
 .image-counter {
-   top: 10px;
+   top: 16px;
+}
+
+.image-counter,
+.image-description {
+   left: 16px;
 }
 
 .caption-expander,
@@ -189,11 +225,6 @@ button {
    width: 32px;
    padding: 8px;
    text-align: center;
-}
-
-.image-counter,
-.image-description {
-   left: 10px;
 }
 
 .item_content {
@@ -283,13 +314,13 @@ input.radio:not(label) {
    border-radius: 4px;
    background: #e0ecf0;
    text-align: center;
-   font-family: 'SF Pro Text';
    font-weight: 700;
    font-size: 14px;
    cursor: pointer;
 }
 
 .btn-custom {
+   text-transform: uppercase;
    width: 108px;
    text-align: center;
    padding: 9px 0;
@@ -360,7 +391,6 @@ input[type='number'] {
    border-radius: 8px;
    background: #e0ecf0;
    margin-bottom: 4px;
-   font-family: 'SF Pro Text';
    font-size: 14px;
    font-weight: 600;
    line-height: 14px;
@@ -455,8 +485,6 @@ input[type='checkbox']:checked ~ label::before {
 .sku-data {
    display: block;
    width: 100%;
-   font-family: 'SF Pro Text';
-   /* font-family: Open Sans; */
    font-size: 12px;
    line-height: 12px;
    font-weight: 600;
@@ -510,7 +538,6 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .item-price {
-   font-family: 'SF Pro Text';
    font-size: 24px;
    font-weight: 700;
    line-height: 24px;
@@ -522,7 +549,6 @@ input[type='checkbox']:checked ~ label::before {
 .item-price span:nth-child(1),
 .item-price span:nth-child(3) {
    margin-right: 2px;
-   font-family: 'SF Pro Text';
    font-size: 10px;
    font-weight: 700;
    line-height: 10px;
@@ -546,7 +572,6 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .item-amount input[type='number'] {
-   font-family: 'SF Pro Text';
    background: #ffffff;
    width: inherit;
    font-size: 16px;
@@ -593,7 +618,6 @@ button:disabled svg {
 
 .item-details {
    display: block;
-   font-family: 'SF Pro Text';
    font-size: 12px;
    color: #697071;
    font-weight: 400;
@@ -612,7 +636,6 @@ button:disabled svg {
    box-sizing: border-box;
    padding: 16px;
    width: 168px;
-   font-family: 'SF Pro Text';
    font-size: 14px;
    font-weight: 300;
    line-height: 14px;
@@ -780,7 +803,6 @@ button:disabled svg {
    .caption-expander {
       justify-content: flex-start;
       align-items: flex-start;
-      font-family: 'SF Pro Text';
       font-size: 14px;
       font-weight: 400;
       line-height: 14px;
