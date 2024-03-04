@@ -17,7 +17,7 @@
             <span class="pagelink_icon">
                <img src="./assets/icons/Arrow_right_long.svg" alt="arrow right" />
             </span>
-            <span class="pagelink_navlink" href="">Incline & Decline Conveyors</span>
+            <span class="pagelink_navlink">Incline &#38; Decline Conveyors</span>
          </div>
 
          <div class="content">
@@ -76,12 +76,10 @@
             <div class="item_content">
                <h1 class="item_heading">Incline &#38; Decline Conveyors</h1>
                <div class="item_description primary">
-                  <div class="section-title">
-                     <p>
-                        Conveyor Belt Width, in <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
-                     </p>
-                  </div>
-
+                  <p class="info-text">
+                     Conveyor Belt Width, in
+                     <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
+                  </p>
                   <div class="radio-select">
                      <ul>
                         <li>
@@ -119,15 +117,51 @@
 
                         <button class="btn-custon active">Custom</button>
                      </ul>
-                     <div class="input-custon">
+                     <div class="size_select custom">
                         <button class="less">
                            <img src="./assets/icons/Chevron_left.svg" alt="chevron left" />
                         </button>
-                        <input type="number" value="1" min="1" max="10" />
+                        <input type="number" value="1" min="1" max="99" /><span>"</span>
                         <button class="more">
                            <img src="./assets/icons/Chevron_right.svg" alt="chevron right" />
                         </button>
                      </div>
+                  </div>
+                  <p class="info-text">
+                     Conveyor Belt Width, in <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
+                  </p>
+                  <div class="size_select">
+                     <button class="less">
+                        <img src="./assets/icons/Chevron_left.svg" alt="chevron left" />
+                     </button>
+                     <input type="number" value="10" min="10" max="99" /><span>"</span>
+                     <button class="more">
+                        <img src="./assets/icons/Chevron_right.svg" alt="chevron right" />
+                     </button>
+                  </div>
+                  <div class="additional-options">
+                     <fieldset>
+                        <div>
+                           <input type="checkbox" id="option1" name="Chain-Driven-Feeder" />
+                           <label for="option1">Chain Driven Feeder</label>
+                           <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
+                        </div>
+                        <div>
+                           <input type="checkbox" id="option2" name="Additional-Support" checked />
+                           <label for="option2">Additional Support Structures</label>
+                           <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
+                        </div>
+                        <div>
+                           <input type="checkbox" id="option3" name="Knee-Braces" />
+                           <label for="option3">Knee Braces</label>
+                           <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
+                        </div>
+                        <div>
+                           <input type="checkbox" id="option4" name="Enhanced-support" />
+                           <label for="option4">Enhanced support</label>
+                           <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
+                        </div>
+                     </fieldset>
                   </div>
                </div>
                <div class="item_description secondary"></div>
