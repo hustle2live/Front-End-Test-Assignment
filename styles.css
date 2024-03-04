@@ -109,6 +109,16 @@ body {
    min-width: 108px;
    width: 108px;
    height: 100%;
+   overflow: hidden;
+}
+
+.image_option__list ul li:focus,
+.image_option__list ul li:active {
+   border: 1px solid #f1582b;
+}
+
+.image_option__list ul li.selected {
+   border: 1px solid #146b87;
 }
 
 .image-counter,
@@ -159,6 +169,7 @@ button:active {
 
 input[type='number'],
 button {
+   box-sizing: border-box;
    background: #f2f5f5;
    border-radius: 8px;
    width: 44px;
@@ -316,6 +327,14 @@ input[type='number'] {
 .item_description .info-text {
    margin: 0;
    font-weight: 600;
+}
+
+.info-text .tooltip-wrapper {
+   position: relative;
+}
+
+.tooltip-wrapper i {
+   cursor: pointer;
 }
 
 .additional-options {
@@ -579,4 +598,27 @@ button:disabled svg {
    line-height: 14px;
    margin: 0;
    margin-top: 10px;
+}
+
+.info-text .tooltip.hidden {
+   display: none;
+}
+
+.info-text .tooltip {
+   position: absolute;
+   display: block;
+   box-sizing: border-box;
+   padding: 16px;
+   width: 168px;
+   font-family: SF Pro Text;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 14px;
+   background: #ffffff;
+   left: 60%;
+   bottom: 30px;
+   transform: translate(-50%, 0);
+   border-radius: 8px;
+   box-shadow: 0px 4px 20px 0px #0000001f;
+   z-index: 1;
 }
