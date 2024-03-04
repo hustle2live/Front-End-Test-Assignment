@@ -721,6 +721,7 @@ button:disabled svg {
    .item_description.primary {
       margin: 0 20px;
       height: auto;
+      min-height: unset;
    }
 
    .item_description.secondary {
@@ -784,8 +785,11 @@ button:disabled svg {
    .additional-options .caption,
    .caption-expander {
       display: flex;
-      margin-bottom: 11px;
    }
+   .additional-options .caption {
+      margin-bottom: 10px;
+   }
+
    .caption-expander {
       font-family: SF Pro Text;
       font-size: 14px;
@@ -798,5 +802,44 @@ button:disabled svg {
    .caption-expander img {
       margin: auto;
       margin-right: 0;
+   }
+
+   .caption-expander.open img {
+      content: url('./assets/icons/Chevron_Down-white.svg');
+   }
+
+   .caption-expander.open {
+      background: #e0ecf0;
+      background: #146b87;
+      color: #ffffff;
+      margin-bottom: 4px;
+   }
+
+   .caption-expander.open img {
+      transform: rotate(-180deg);
+   }
+
+   .additional-options {
+      z-index: 0;
+   }
+
+   .additional-options fieldset {
+      /* display: none; */
+
+      /* opacity: 0; */
+      visibility: hidden;
+      /* height: 0; */
+      transform: translate(0, -100%);
+      transition-duration: 700ms;
+      z-index: -2;
+   }
+
+   .additional-options .caption-expander.open ~ fieldset {
+      /* display: block; */
+      visibility: visible;
+      transform: translate(0, 0);
+      z-index: 1;
+
+      /* height: 100%; */
    }
 }
