@@ -1,8 +1,11 @@
 body {
-   background: #c2c2c23b;
+   margin: 0;
+   padding: 0;
 }
 
 .container {
+   display: block;
+   box-sizing: border-box;
    max-width: 1360px;
    width: 1360px;
    margin: 0 auto;
@@ -10,6 +13,7 @@ body {
    padding: 32px 0;
    background: #ffffff;
 }
+
 .pagelink {
    font-family: 'SF Pro Text';
    margin: 0;
@@ -195,19 +199,6 @@ button {
    left: 10px;
 }
 
-.prev {
-}
-.next {
-}
-
-.image {
-}
-
-.list_forward {
-}
-.list_backward {
-}
-
 .item_content {
    display: flex;
    flex-wrap: wrap;
@@ -236,12 +227,23 @@ button {
 }
 
 .size_select.custom {
+   display: none;
+}
+
+.radio-select .size_select {
    margin-bottom: 0;
 }
 
 .size_select,
 .radio-select {
    margin-bottom: 32px;
+}
+
+.size_select {
+   display: flex;
+   gap: 8px;
+   position: relative;
+   margin-top: 10px;
 }
 
 .radio-select ul {
@@ -270,7 +272,7 @@ input.radio:not(label) {
    display: none;
 }
 
-.btn-custon,
+.btn-custom,
 .radio-select label {
    position: relative;
    display: flex;
@@ -290,23 +292,16 @@ input.radio:not(label) {
    cursor: pointer;
 }
 
-.btn-custon {
+.btn-custom {
    width: 108px;
    text-align: center;
    padding: 9px 0;
 }
 
-.btn-custon.active,
+.btn-custom.active,
 .radio:checked + label {
    background: #146b87 !important;
    color: #ffffff;
-}
-
-.size_select {
-   display: flex;
-   gap: 8px;
-   position: relative;
-   margin-top: 10px;
 }
 
 input[type='number']::-webkit-outer-spin-button,
@@ -359,7 +354,11 @@ input[type='number'] {
    border: none;
 }
 
-.additional-options fieldset div {
+.additional-options fieldset ul {
+   padding-left: 0;
+}
+
+.additional-options fieldset li {
    max-width: 100%;
    height: 44px;
    padding: 0 12px;
@@ -376,7 +375,7 @@ input[type='number'] {
    justify-content: flex-start;
 }
 
-.additional-options fieldset div span {
+.additional-options fieldset li span {
    margin: auto;
    margin-right: 0;
 }
@@ -407,7 +406,7 @@ input[type='checkbox'] ~ label::before {
    height: 20px;
    border: 1px solid #424849;
    border-radius: 4px;
-   z-index: 3;
+   z-index: 1;
    padding: 0;
    margin: 0;
    box-sizing: border-box;
@@ -659,10 +658,6 @@ button:disabled svg {
       margin-top: 88px;
    }
 
-   .item_description secondary {
-      margin-left: 0;
-   }
-
    .item_gallery {
       max-width: inherit;
    }
@@ -673,7 +668,6 @@ button:disabled svg {
    }
 
    .image_wrapper img {
-      /* max-width: 100%; */
       height: auto;
       width: 100%;
    }
@@ -725,7 +719,7 @@ button:disabled svg {
    }
 
    .item_description.secondary {
-      margin: 40px 0;
+      margin: 20px 0;
       width: 100%;
       height: auto;
    }
@@ -769,7 +763,7 @@ button:disabled svg {
    .radio-select ul {
       gap: 16px;
    }
-   .btn-custon,
+   .btn-custom,
    .radio-select label {
       height: 44px;
       border-radius: 8px;
@@ -791,6 +785,8 @@ button:disabled svg {
    }
 
    .caption-expander {
+      justify-content: flex-start;
+      align-items: flex-start;
       font-family: SF Pro Text;
       font-size: 14px;
       font-weight: 400;
@@ -798,48 +794,49 @@ button:disabled svg {
       width: 100%;
       padding: 15px 16px;
       border: 1px solid #d6dcdd;
+      transition-duration: 700ms;
+      margin-bottom: 4px;
    }
    .caption-expander img {
-      margin: auto;
-      margin-right: 0;
+      margin: 0;
+      padding: 4px 0;
+      margin-left: auto;
    }
 
    .caption-expander.open img {
       content: url('./assets/icons/Chevron_Down-white.svg');
+      transform: rotate(-180deg);
    }
 
    .caption-expander.open {
       background: #e0ecf0;
       background: #146b87;
       color: #ffffff;
-      margin-bottom: 4px;
-   }
-
-   .caption-expander.open img {
-      transform: rotate(-180deg);
-   }
-
-   .additional-options {
-      z-index: 0;
    }
 
    .additional-options fieldset {
-      /* display: none; */
-
-      /* opacity: 0; */
-      visibility: hidden;
-      /* height: 0; */
-      transform: translate(0, -100%);
+      display: block;
+      position: relative;
+      overflow: hidden;
       transition-duration: 700ms;
-      z-index: -2;
+      height: 12px;
    }
 
-   .additional-options .caption-expander.open ~ fieldset {
-      /* display: block; */
-      visibility: visible;
-      transform: translate(0, 0);
-      z-index: 1;
+   .additional-options fieldset ul {
+      margin: 0;
+      position: absolute;
+      top: 0px;
+      width: 310px;
+      left: 2px;
+      transform: translate(0, -110%);
+      transition-duration: 700ms;
+   }
 
-      /* height: 100%; */
+   .additional-options .caption-expander.open ~ fieldset ul {
+      z-index: 0;
+      transform: translate(0, 0);
+   }
+   .additional-options .caption-expander.open ~ fieldset {
+      height: 204px;
    }
 }
