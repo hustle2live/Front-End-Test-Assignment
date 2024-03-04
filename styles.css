@@ -765,6 +765,9 @@ button:disabled svg {
    .size_select.custom {
       margin-top: 16px;
    }
+   .size_select span {
+      left: 54%;
+   }
 
    .additional-options .caption,
    .caption-expander {
