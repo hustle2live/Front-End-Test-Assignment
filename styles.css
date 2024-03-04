@@ -26,14 +26,65 @@ input[type='number'],
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-.container {
+.caption-expander,
+.info-text .tooltip,
+.item-submit,
+.stock-data,
+.item-ratio-data,
+.additional-options fieldset li,
+.btn-custom,
+.radio-select label {
+   font-size: 14px;
+}
+
+.item-amount,
+.image_option__list,
+.item_description.primary,
+.item_description.secondary > div,
+.item_content,
+.size_select,
+.radio-select ul,
+.btn-custom,
+.radio-select label,
+.additional-options fieldset li,
+.stock-data,
+.item-ratio-data,
+.item-ratio-data a {
+   display: flex;
+}
+
+.caption-expander,
+div.button,
+button,
+.btn-custom,
+.radio-select label,
+.tooltip-wrapper i,
+input[type='checkbox'] ~ label {
+   cursor: pointer;
+}
+
+.container,
+.info-text .tooltip,
+.item-details,
+.sku-data,
+.item_description.secondary .divider,
+input[type='checkbox'] ~ label::before,
+.item_heading,
+.image_option__list ul li,
+.image-counter,
+.image-description,
+.expand,
+.select-buttons {
    display: block;
+}
+
+.container {
    box-sizing: border-box;
    max-width: 1360px;
    width: 1360px;
    margin: 0 auto;
-   height: 900px;
    padding: 32px 0;
+   height: 900px;
    background: #ffffff;
 }
 
@@ -77,12 +128,6 @@ input[type='number'],
    display: grid;
    grid-template-columns: 652px 664px;
    gap: 44px;
-}
-
-.image_option__list,
-.item_description.primary,
-.item_description.secondary > div {
-   display: flex;
 }
 
 .image_wrapper {
@@ -129,7 +174,6 @@ input[type='number'],
 }
 
 .image_option__list ul li {
-   display: block;
    box-sizing: border-box;
    list-style-type: none;
    min-width: 108px;
@@ -152,13 +196,6 @@ input[type='number'],
 .expand,
 .select-buttons {
    position: absolute;
-}
-
-.image-counter,
-.image-description,
-.expand,
-.select-buttons {
-   display: block;
 }
 
 .select-buttons button {
@@ -194,7 +231,6 @@ input[type='number'],
 div.button,
 button {
    box-sizing: border-box;
-   cursor: pointer;
 }
 
 button {
@@ -228,12 +264,10 @@ button {
 }
 
 .item_content {
-   display: flex;
    flex-wrap: wrap;
 }
 
 .item_heading {
-   display: block;
    width: 100%;
    margin: 0;
    font-family: Montserrat;
@@ -268,14 +302,12 @@ button {
 }
 
 .size_select {
-   display: flex;
    gap: 8px;
    position: relative;
    margin-top: 10px;
 }
 
 .radio-select ul {
-   display: flex;
    justify-content: flex-start;
    flex-wrap: wrap;
    gap: 12px;
@@ -303,7 +335,6 @@ input.radio:not(label) {
 .btn-custom,
 .radio-select label {
    position: relative;
-   display: flex;
    justify-content: center;
    align-items: center;
    box-sizing: border-box;
@@ -315,8 +346,6 @@ input.radio:not(label) {
    background: #e0ecf0;
    text-align: center;
    font-weight: 700;
-   font-size: 14px;
-   cursor: pointer;
 }
 
 .btn-custom {
@@ -370,10 +399,6 @@ input[type='number'] {
    margin-left: 8px;
 }
 
-.tooltip-wrapper i {
-   cursor: pointer;
-}
-
 .additional-options fieldset {
    margin: 0;
    padding: 0;
@@ -391,11 +416,9 @@ input[type='number'] {
    border-radius: 8px;
    background: #e0ecf0;
    margin-bottom: 4px;
-   font-size: 14px;
    font-weight: 600;
    line-height: 14px;
    text-align: left;
-   display: flex;
    align-items: center;
    justify-content: flex-start;
 }
@@ -413,7 +436,6 @@ input[type='checkbox'] ~ label {
    position: relative;
    overflow: visible;
    margin-left: 30px;
-   cursor: pointer;
    padding: 4px 0;
    line-height: 20px;
    width: 100%;
@@ -425,7 +447,6 @@ input[type='checkbox'] ~ label::before {
    left: -30px;
    bottom: -6px;
    transform: translate(0, -50%);
-   display: block;
    content: '';
    width: 20px;
    height: 20px;
@@ -459,7 +480,6 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .item_description.secondary .divider {
-   display: block;
    width: 100%;
    height: 1px;
    background: #d6dcdd;
@@ -468,14 +488,12 @@ input[type='checkbox']:checked ~ label::before {
 
 .stock-data,
 .item-ratio-data {
-   display: flex;
    box-sizing: border-box;
    align-items: center;
    height: 32px;
    border-radius: 4px;
    padding: 8px 12px;
    font-family: Montserrat;
-   font-size: 14px;
    font-weight: 700;
    line-height: 14px;
    font-weight: 700;
@@ -483,7 +501,6 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .sku-data {
-   display: block;
    width: 100%;
    font-size: 12px;
    line-height: 12px;
@@ -525,7 +542,6 @@ input[type='checkbox']:checked ~ label::before {
    margin-right: 4px;
 }
 .item-ratio-data a {
-   display: flex;
    gap: 6px;
    margin-left: auto;
    margin-right: 0;
@@ -564,7 +580,6 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .item-amount {
-   display: flex;
    box-sizing: border-box;
    width: 100%;
    gap: 16px;
@@ -603,7 +618,6 @@ button:disabled svg {
    background: #f1582b;
    color: #ffffff;
    font-family: Montserrat;
-   font-size: 14px;
    font-weight: 700;
    line-height: 20px;
    text-align: center;
@@ -617,7 +631,6 @@ button:disabled svg {
 }
 
 .item-details {
-   display: block;
    font-size: 12px;
    color: #697071;
    font-weight: 400;
@@ -632,11 +645,9 @@ button:disabled svg {
 
 .info-text .tooltip {
    position: absolute;
-   display: block;
    box-sizing: border-box;
    padding: 16px;
    width: 168px;
-   font-size: 14px;
    font-weight: 300;
    line-height: 14px;
    background: #ffffff;
@@ -796,6 +807,7 @@ button:disabled svg {
    .caption-expander {
       display: flex;
    }
+
    .additional-options .caption {
       margin-bottom: 10px;
    }
@@ -803,7 +815,6 @@ button:disabled svg {
    .caption-expander {
       justify-content: flex-start;
       align-items: flex-start;
-      font-size: 14px;
       font-weight: 400;
       line-height: 14px;
       width: 100%;
