@@ -2,4 +2,4 @@
 Front-End-Test-Assignment
 
 - Clone repository files
-- Run index.html in browser on live-server in VSCode
+- Run index.html in browser or "live-server" in VSCode
