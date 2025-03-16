@@ -80,7 +80,8 @@
          </div>
          <img src="./assets/images/ellipse-1.png" alt="elipse" class="elipse elipse-left-top" />
       </header>
-      <main>
+
+      <main hidden>
          <section class="section story">
             <p class="section__title">How to Use SHKeeper?</p>
             <p class="section__description">
@@ -358,16 +359,36 @@
          <section class="section feedback">
             <p class="section__title">Send us a message</p>
             <form class="feedback__form" autocomplete="on">
-               <input type="text" placeholder="Your Name" minlength="2" pattern="[\s а-яіІїЇА-Яa-zA-Z0-9\-]+" required />
-               <input type="email" placeholder="Your Email" minlength="6" pattern="[а-яА-Яa-zA-Z0-9._%\+\-]+@[а-яА-Яa-zA-Z0-9.\-]+\.[а-яА-Яa-zA-Z]{2,4}" required />
-               <textarea type="text" rows="6" placeholder="Message" minlength="10" pattern="[а-яА-Яa-zA-Z0-9\,\-.]+" required></textarea>
+               <input
+                  type="text"
+                  placeholder="Your Name"
+                  minlength="2"
+                  pattern="[\s а-яіІїЇА-Яa-zA-Z0-9\-]+"
+                  required
+               />
+               <input
+                  type="email"
+                  placeholder="Your Email"
+                  minlength="6"
+                  pattern="[а-яА-Яa-zA-Z0-9._%\+\-]+@[а-яА-Яa-zA-Z0-9.\-]+\.[а-яА-Яa-zA-Z]{2,4}"
+                  required
+               />
+               <textarea
+                  type="text"
+                  rows="6"
+                  placeholder="Message"
+                  minlength="10"
+                  pattern="[а-яА-Яa-zA-Z0-9\,\-.]+"
+                  required
+               ></textarea>
                <button type="submit" class="form__button">Submit</button>
             </form>
             <div class="feedback__bg-abstract-top"></div>
             <div class="feedback__bg-abstract"></div>
          </section>
       </main>
-      <footer class="footer">
+
+      <footer hidden class="footer">
          <div class="container footer__content">
             <div class="footer__content-section">
                <div class="footer__title">
