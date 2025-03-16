@@ -3,255 +3,412 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
       <link rel="stylesheet" href="./styles.css" />
-      <title>Front-End Developer Test Assignment</title>
+      <link rel="stylesheet" href="./styles-mobile.css" />
+      <script src="./script.js" type="text/javascript" defer></script>
    </head>
    <body>
-      <div class="container">
-         <div class="pagelink">
-            <a class="pagelink_navlink" href="#home">Home</a>
-            <span class="pagelink_icon">
-               <img src="./assets/icons/Arrow_right_long.svg" alt="arrow right" />
-            </span>
-            <a class="pagelink_navlink" href="#conveyors">Conveyors</a>
-            <span class="pagelink_icon">
-               <img src="./assets/icons/Arrow_right_long.svg" alt="arrow right" />
-            </span>
-            <span class="pagelink_navlink nowrap">Incline &#38; Decline Conveyors</span>
+      <header class="header container">
+         <div class="header__menu">
+            <div class="header__logo-container">
+               <a href="/" class="header__logo-link">
+                  <img src="./assets/icons/header_logo.png" alt="Logo" class="header__logo-image" />
+               </a>
+            </div>
+
+            <nav class="header__nav">
+               <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                     <a href="/home" class="header__nav-link">Home</a>
+                  </li>
+                  <li class="header__nav-item">
+                     <a href="/about" class="header__nav-link">About</a>
+                  </li>
+                  <li class="header__nav-item">
+                     <a href="/services" class="header__nav-link">Services</a>
+                  </li>
+                  <li class="header__nav-item">
+                     <a href="/products" class="header__nav-link">Products</a>
+                  </li>
+                  <li class="header__nav-item">
+                     <a href="/contact" class="header__nav-link">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+
+            <div class="header__button-container">
+               <button class="header__button">Get Started</button>
+            </div>
          </div>
 
-         <div class="content">
-            <div class="item_gallery">
-               <div class="image_wrapper">
-                  <img src="./assets/images/Conveyor-3d-Temp0025.png" alt="Decline Conveyor with items" />
+         <div class="header__content">
+            <div class="header__title">
+               Set Up Accepting Payments in Multiple Cryptocurrencies With No Fees for Your E-commerce
+            </div>
+            <div class="header__text">
+               SHKeeper — is a self-hosted and open-source cryptocurrency payment processor. The unique combination of
+               gateway and merchant. It allows you to accept payments in cryptocurrency.
+            </div>
+            <div class="header__buttons-container">
+               <button class="">Get Started</button>
+               <button class="outlined">How It Works</button>
+            </div>
+         </div>
 
-                  <button class="expand">
-                     <img src="./assets/icons/Expand.svg" alt="arrows expand" />
-                  </button>
+         <div class="header__cards-container">
+            <div class="header__card">
+               <div class="header__card-item"><img src="./assets/images/Union-1.png" alt="union" /></div>
+               <div class="header__card-text">Multiple Cryptocurrencies</div>
+            </div>
+            <div class="header__card">
+               <div class="header__card-item"><img src="./assets/images/Union-2.png" alt="union" /></div>
+               <div class="header__card-text">No Transaction Fees</div>
+            </div>
+            <div class="header__card">
+               <div class="header__card-item"><img src="./assets/images/Union-3.png" alt="union" /></div>
+               <div class="header__card-text">No Third Parties</div>
+            </div>
+         </div>
 
-                  <div class="select-buttons">
-                     <button class="prev">
-                        <img src="./assets/icons/Chevron_left.svg" alt="chevron left" />
-                     </button>
-                     <button class="next">
-                        <img src="./assets/icons/Chevron_right.svg" alt="chevron right" />
-                     </button>
+         <div class="header__background">
+            <img src="./assets/images/header_image.png" alt="wallet and coins" class="header__background-image" />
+            <img src="./assets/images/ellipse.svg" alt="elipse" class="elipse elipse-xs" />
+            <img src="./assets/images/ellipse.svg" alt="elipse" class="elipse elipse-sm" />
+            <img src="./assets/images/ellipse.svg" alt="elipse" class="elipse elipse-md" />
+            <img src="./assets/images/ellipse-1.png" alt="elipse" class="elipse elipse-lg" />
+         </div>
+         <img src="./assets/images/ellipse-1.png" alt="elipse" class="elipse elipse-left-top" />
+      </header>
+      <main>
+         <section class="section story">
+            <p class="section__title">How to Use SHKeeper?</p>
+            <p class="section__description">
+               SHKeeper equips you with extra efficiency in integrating crypto payment service with any other existing
+               systems.
+            </p>
+            <div class="story__cards-grid">
+               <article class="story__card">
+                  <div class="story__image">
+                     <img src="./assets/icons/story-ico-3.svg" alt="vector detail" />
                   </div>
+                  <div class="story__content">
+                     <h4 class="story__content-title">Integrate With Popular CMS and Plug-Ins</h4>
+                     <p class="story__content-text">
+                        SHKeeper is available for integration with any of the most popular CMSs, plugins, and billing
+                        systems. This is a completely digitalized and decentralized option. So you don't need to rely on
+                        third parties. The module for WordPress CMS and WooCommerce is available for free.
+                     </p>
+                  </div>
+               </article>
+               <article class="story__card">
+                  <div class="story__image">
+                     <img src="./assets/icons/story-ico-4.svg" alt="vector detail" />
+                  </div>
+                  <div class="story__content">
+                     <h4 class="story__content-title">Integrate With Popular CMS and Plug-Ins</h4>
+                     <p class="story__content-text">
+                        SHKeeper is available for integration with any of the most popular CMSs, plugins, and billing
+                        systems. This is a completely digitalized and decentralized option. So you don't need to rely on
+                        third parties. The module for WordPress CMS and WooCommerce is available for free.
+                     </p>
+                  </div>
+               </article>
+               <article class="story__card">
+                  <div class="story__image">
+                     <img src="./assets/icons/story-ico-2.svg" alt="vector detail" />
+                  </div>
+                  <div class="story__content">
+                     <h4 class="story__content-title">Integrate With Popular CMS and Plug-Ins</h4>
+                     <p class="story__content-text">
+                        SHKeeper is available for integration with any of the most popular CMSs, plugins, and billing
+                        systems. This is a completely digitalized and decentralized option. So you don't need to rely on
+                        third parties. The module for WordPress CMS and WooCommerce is available for free.
+                     </p>
+                  </div>
+               </article>
+               <article class="story__card">
+                  <div class="story__image">
+                     <img src="./assets/icons/story-ico-1.svg" alt="vector detail" />
+                  </div>
+                  <div class="story__content">
+                     <h4 class="story__content-title">Integrate With Popular CMS and Plug-Ins</h4>
+                     <p class="story__content-text">
+                        SHKeeper is available for integration with any of the most popular CMSs, plugins, and billing
+                        systems. This is a completely digitalized and decentralized option. So you don't need to rely on
+                        third parties. The module for WordPress CMS and WooCommerce is available for free.
+                     </p>
+                  </div>
+               </article>
+               <div class="elipse__abstract-left"></div>
+               <div class="elipse__abstract-right"></div>
+            </div>
+         </section>
 
-                  <div class="image-counter">1/6</div>
-                  <p class="image-description">Picture shows conveyor with optional structures amd features</p>
+         <section class="section container plans">
+            <p class="section__title">Tariff Plans</p>
+            <div class="plans__cards-grid">
+               <div class="plan__card">
+                  <img class="plan__icon" src="./assets/icons/plans_mech.svg" alt="mechanism" />
+                  <p class="plan__heading">Integration & Support</p>
+                  <p class="plan__price">
+                     $2
+                     <span>/per year</span>
+                  </p>
+                  <ul class="plan__description">
+                     <li>Payment processor integration</li>
+                     <li>Payment processor support</li>
+                     <li>All features are available</li>
+                     <li>Hosting services available</li>
+                     <li>Personal customer manager</li>
+                  </ul>
+                  <button class="plan__button">Contact Us</button>
                </div>
-               <div class="image_option__list">
-                  <button class="backward">
-                     <img src="./assets/icons/Chevron_left.svg" alt="chevron left" />
-                  </button>
-
-                  <ul>
-                     <li class="selected">
-                        <img src="./assets/images/Pictures.png" alt="Decline Conveyor items pack" />
+               <div class="plan__card">
+                  <img class="plan__icon" src="./assets/icons/plans_arrow.svg" alt="mechanism" />
+                  <p class="plan__heading">Open-Source</p>
+                  <p class="plan__price">$0</p>
+                  <ul class="plan__description">
+                     <li>
+                        <span>Self Installation and Launching</span>
+                        <p>
+                           Create the module yourself using API. Detailed documentation on request. For WooCommerce and
+                           WordPress, the module is available for free.
+                        </p>
                      </li>
                      <li>
-                        <img src="./assets/images/Conveyor-3d-Temp0022.png" alt="Decline Conveyorєline" />
+                        <span>Wallets Auto-Detection</span>
+                        <p>
+                           SHKeeper detects your crypto wallets. Also, it's possible to make payments into other wallets
+                           or crypto stock exchanges.
+                        </p>
                      </li>
                      <li>
-                        <img
-                           src="./assets/images/Conveyor-3d-Temp0066.png"
-                           alt="Multiple Decline Conveyor-with items pack"
-                        />
-                     </li>
-                     <li>
-                        <img src="./assets/images/Conveyor-3d-Temp0067.png" alt="Multiple Decline Conveyor-list" />
-                     </li>
-                     <li>
-                        <img src="./assets/images/image-29.png" alt="Decline Conveyor-drawing" />
+                        <span>Receive and Make Payments</span>
+                        <p>Start accepting all popular cryptocurrencies, without intermediaries and fees.</p>
                      </li>
                   </ul>
-
-                  <button class="forward">
-                     <img src="./assets/icons/Chevron_right.svg" alt="chevron right" />
-                  </button>
+                  <button class="plan__button">Contact Us</button>
+               </div>
+               <div class="plan__card">
+                  <img class="plan__icon" src="./assets/icons/plans_lamp.svg" alt="mechanism" />
+                  <p class="plan__heading">Custom Solution</p>
+                  <p class="plan__price">Pricing on request</p>
+                  <ul class="plan__description">
+                     <li>Detailed product analysis</li>
+                     <li>Hosting services available</li>
+                     <li>Custom solution set-up</li>
+                     <li>Advanced issues and features</li>
+                     <li>Integration and support features</li>
+                  </ul>
+                  <button class="plan__button">Contact Us</button>
                </div>
             </div>
+            <div class="plans__bg-abstract"></div>
+         </section>
 
-            <div class="item_content">
-               <h1 class="item_heading">Incline &#38; Decline Conveyors</h1>
-               <div class="item_description primary">
-                  <p class="info-text">
-                     Conveyor Belt Width, in
-                     <span class="tooltip-wrapper">
-                        <i>
-                           <img src="./assets/icons/info_circle.svg" alt="info" />
-                        </i>
-                        <span class="tooltip hidden"
-                           >Flexible gravity roller conveyors are ideal for maneuvering into places that are not suited
-                           for conventional conveyor systems.
-                        </span>
-                     </span>
-                  </p>
-                  <div class="radio-select">
-                     <ul>
-                        <li>
-                           <input type="radio" id="radioChoice1" class="radio" name="size" />
-                           <label for="radioChoice1">10"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice2" class="radio" name="size" />
-                           <label for="radioChoice2">18"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice3" class="radio" name="size" />
-                           <label for="radioChoice3">24"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice4" class="radio" name="size" />
-                           <label for="radioChoice4">30"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice5" class="radio" name="size" />
-                           <label for="radioChoice5">36"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice6" class="radio" name="size" />
-                           <label for="radioChoice6">42"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice7" class="radio" name="size" />
-                           <label for="radioChoice7">48"</label>
-                        </li>
-                        <li>
-                           <input type="radio" id="radioChoice8" class="radio" name="size" />
-                           <label for="radioChoice8">54"</label>
-                        </li>
-                        <li class="btn-custom">Custom</li>
-                     </ul>
-                     <div class="size_select custom">
-                        <button class="less">
-                           <img src="./assets/icons/Chevron_left.svg" alt="chevron left" />
-                        </button>
-                        <input type="number" value="1" min="1" max="99" /><span>"</span>
-                        <button class="more">
-                           <img src="./assets/icons/Chevron_right.svg" alt="chevron right" />
-                        </button>
-                     </div>
-                  </div>
-                  <p class="info-text">
-                     Bed Section Length, in
-                     <span class="tooltip-wrapper">
-                        <i>
-                           <img src="./assets/icons/info_circle.svg" alt="info" />
-                        </i>
-                        <span class="tooltip hidden"
-                           >Flexible gravity roller conveyors are ideal for maneuvering into places that are not suited
-                           for conventional conveyor systems.
-                        </span>
-                     </span>
-                  </p>
-                  <div class="size_select">
-                     <button class="less">
-                        <img src="./assets/icons/Chevron_left.svg" alt="chevron left" />
-                     </button>
-                     <input type="number" value="10" min="10" max="99" /><span>"</span>
-                     <button class="more">
-                        <img src="./assets/icons/Chevron_right.svg" alt="chevron right" />
-                     </button>
-                  </div>
-                  <div class="additional-options">
-                     <p class="caption info-text">
-                        Additional options
-                        <span class="tooltip-wrapper">
-                           <i>
-                              <img src="./assets/icons/info_circle.svg" alt="info" />
-                           </i>
-                           <span class="tooltip hidden"
-                              >Flexible gravity roller conveyors are ideal for maneuvering into places that are not
-                              suited for conventional conveyor systems.
-                           </span>
-                        </span>
-                     </p>
-                     <div class="caption-expander">
-                        <span> Select options</span>
-                        <img src="./assets/icons/Chevron_Down.svg" alt="Chevron down" />
-                     </div>
-                     <fieldset>
-                        <ul>
-                           <li>
-                              <input type="checkbox" id="option1" name="Chain-Driven-Feeder" />
-                              <label for="option1">Chain Driven Feeder</label>
-                              <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
-                           </li>
-                           <li>
-                              <input type="checkbox" id="option2" name="Additional-Support" checked />
-                              <label for="option2">Additional Support Structures</label>
-                              <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
-                           </li>
-                           <li>
-                              <input type="checkbox" id="option3" name="Knee-Braces" />
-                              <label for="option3">Knee Braces</label>
-                              <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
-                           </li>
-                           <li>
-                              <input type="checkbox" id="option4" name="Enhanced-support" />
-                              <label for="option4">Enhanced support</label>
-                              <span><img src="./assets/icons/info_circle.svg" alt="info" /></span>
-                           </li>
-                        </ul>
-                     </fieldset>
-                  </div>
+         <section class="section container about">
+            <p class="section__title">About SHKeeper</p>
+            <article class="about__article">
+               <div class="about__image">
+                  <img src="./assets/images/about_image1704.png" alt="shkeeper dashboart app view" />
                </div>
-               <div class="item_description secondary">
-                  <div>
-                     <div class="sku-data">
-                        <p>SKU: <span class="sku-num">WMD-2446F-GRYI</span></p>
-                     </div>
-                     <div class="stock-data">
-                        <img src="./assets/icons/Check.svg" alt="check" />
-                        <p>Upon request</p>
-                     </div>
-                     <div class="item-ratio-data">
-                        <div class="item-ratio__rating">
-                           <span class="item-ratio_icon"><img src="./assets/icons/Star.svg" alt="star ratio" /></span>
-                           <span class="star_ratio__icon"><img src="./assets/icons/Star.svg" alt="star ratio" /></span>
-                           <span class="star_ratio__icon"><img src="./assets/icons/Star.svg" alt="star ratio" /></span>
-                           <span class="star_ratio__icon"><img src="./assets/icons/Star.svg" alt="star ratio" /></span>
-                           <span class="star_ratio__icon"><img src="./assets/icons/Star.svg" alt="star ratio" /></span>
-                        </div>
-                        <span class="item-ratio__count">(20)</span>
-                        <a href="#item:sku">
-                           <span>Read</span>
-                           <img src="./assets/icons/Chevron_right.svg" alt="arrow right" />
-                        </a>
-                     </div>
-                  </div>
-                  <span class="divider"></span>
-                  <div>
-                     <p class="item-price">
-                        <span> from </span>
-                        <span class="item-price_total">$22360</span>
-                        <span> ea </span>
-                        <span>*</span>
-                     </p>
-                     <div class="item-amount">
-                        <button class="less" disabled>
-                           <img src="./assets/icons/Minus.svg" alt="minus" />
-                        </button>
-                        <input type="number" value="1" id="amount" />
-                        <button class="more">
-                           <img src="./assets/icons/Plus.svg" alt="plus" />
-                        </button>
-                     </div>
-                     <button class="item-submit">
-                        <img src="./assets/icons/Flag.svg" alt="lang" />
-                        request
-                     </button>
-                     <p class="item-details">
-                        *Final price is defined after a consultation with our specialist due to actual conditions of
-                        use.
-                     </p>
-                  </div>
+               <div class="about__content">
+                  <p>
+                     Our mission is to help e-commerce businesses move to a new level by accepting crypto payments using
+                     customizable technology.
+                  </p>
+                  <p>
+                     SHKeeper an open-source so that other businesses can move to a new level and stand out from the
+                     competition. It's free and can be hosted on your servers or on Virtual Systems servers.
+                  </p>
+                  <p>
+                     If you need help with integration, write to us. We will be happy to help you! We can also write a
+                     custom solution for you.
+                  </p>
+                  <button>Explore Virtual Systems</button>
+               </div>
+            </article>
+            <div class="about__bg-abstract"></div>
+            <img src="./assets/images/ellipse.svg" alt="elipse" class="elipse about__elipse-xs" />
+            <img src="./assets/images/ellipse.svg" alt="elipse" class="elipse about__elipse-sm" />
+         </section>
+
+         <section class="section roadmap">
+            <p class="section__title">Road Map</p>
+            <div class="roadmap__container">
+               <div class="roadmap__section">
+                  <p class="roadmap__section-title">January 2022</p>
+                  <p class="roadmap__section-text">
+                     SHKeeper's release for Virtual Systems. Installation and customization for our goals.
+                  </p>
+               </div>
+               <div class="roadmap__section">
+                  <p class="roadmap__section-title">July 2022</p>
+                  <p class="roadmap__section-text">Possibility to create invoices on a web version.</p>
+               </div>
+               <div class="roadmap__section">
+                  <p class="roadmap__section-title">November 2022</p>
+                  <p class="roadmap__section-text">Adding the ability to import a key.</p>
+               </div>
+               <div class="roadmap__section roadmap__bottom">
+                  <p class="roadmap__section-title">May 2022</p>
+                  <p class="roadmap__section-text">Advance improvement and release in open-source.</p>
+               </div>
+               <div class="roadmap__section roadmap__bottom">
+                  <p class="roadmap__section-title">September 2022</p>
+                  <p class="roadmap__section-text">USDT will be added for two networks (TRC-20 and ERC-20).</p>
+               </div>
+               <div class="roadmap__line">
+                  <span class="roadmap__point"></span>
+                  <span class="roadmap__point roadmap__point-small"></span>
+                  <span class="roadmap__point"></span>
+                  <span class="roadmap__point roadmap__point-small"></span>
+                  <span class="roadmap__point"></span>
+               </div>
+               <div class="roadmap__bg-abstract"></div>
+            </div>
+         </section>
+
+         <section class="section questions">
+            <p class="section__title">FAQ</p>
+            <ul class="questions__list">
+               <li class="questions__item">
+                  <p class="questions__title">What is SHKeeper?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item active">
+                  <p class="questions__title">Who Can Use SHKeeper?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item">
+                  <p class="questions__title">How to Install SHKeeper?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item">
+                  <p class="questions__title">Do I Need to Have an Online Store to Use SHKeeper?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item">
+                  <p class="questions__title">How Does SHKeeper Create a New Address for Each Invoice?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item">
+                  <p class="questions__title">What if I have a problem paying an invoice?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item">
+                  <p class="questions__title">How Much Does It Cost to Run the SHKeeper?</p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+               <li class="questions__item">
+                  <p class="questions__title">
+                     What are the Minimal Requirements to Server Configuration for SHKeeper?
+                  </p>
+                  <p class="questions__text">
+                     SHKeeper is a multifunctional software with many variations of exploitation that can solve problems
+                     for different types of users. The processor can be useful for eCommerce project owners, content
+                     creators, Lightning network users, exchanges, hosting providers, etc.
+                  </p>
+               </li>
+            </ul>
+         </section>
+
+         <section class="section cta">
+            <p class="cta__title">WOULD YOU LIKE TO ASK A QUESTION?</p>
+            <p class="cta__text">Leave us a message & we will reply shortly.</p>
+            <p class="cta__text">Support available</p>
+            <p class="cta__text">24/7/365</p>
+            <button class="cta__button">Contact Us</button>
+            <img class="cta__image-question" src="./assets/images/question-mark.png" alt="question-part" />
+            <img class="cta__image-question" src="./assets/images/question.png" alt="question-part" />
+            <div class="cta__image-message">
+               <img src="./assets/images/message.png" alt="message" />
+            </div>
+         </section>
+
+         <section class="section feedback">
+            <p class="section__title">Send us a message</p>
+            <form class="feedback__form" autocomplete="on">
+               <input type="text" placeholder="Your Name" minlength="2" pattern="[\s а-яіІїЇА-Яa-zA-Z0-9\-]+" required />
+               <input type="email" placeholder="Your Email" minlength="6" pattern="[а-яА-Яa-zA-Z0-9._%\+\-]+@[а-яА-Яa-zA-Z0-9.\-]+\.[а-яА-Яa-zA-Z]{2,4}" required />
+               <textarea type="text" rows="6" placeholder="Message" minlength="10" pattern="[а-яА-Яa-zA-Z0-9\,\-.]+" required></textarea>
+               <button type="submit" class="form__button">Submit</button>
+            </form>
+            <div class="feedback__bg-abstract-top"></div>
+            <div class="feedback__bg-abstract"></div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container footer__content">
+            <div class="footer__content-section">
+               <div class="footer__title">
+                  <img class="footer__logo" src="./assets/icons/header_logo.png" alt="shkeeper logo" />
+               </div>
+               <p>
+                  SHKeeper - open-source cryptocurrency payment processor with multiply cryptocurrencies available. It
+                  will take your E-commerce to a new level.
+               </p>
+            </div>
+            <div class="footer__content-section">
+               <div class="footer__title">SOFTWARE</div>
+               <ul class="footer__list">
+                  <li><a href="#">How to use</a></li>
+                  <li><a href="#">Tarif Plans</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Integrations</a></li>
+               </ul>
+            </div>
+            <div class="footer__content-section">
+               <div class="footer__title">RESOURCES</div>
+               <ul class="footer__list">
+                  <li><a href="#">Knowledge Base</a></li>
+                  <li><a href="#">Blog</a></li>
+               </ul>
+            </div>
+            <div class="footer__content-section">
+               <div class="footer__title">Join Our Community</div>
+               <div class="footer__social">
+                  <a href="#"><img src="./assets/icons/social(6).svg" alt="social" /></a>
+                  <a href="#"><img src="./assets/icons/social(5).svg" alt="social" /></a>
+                  <a href="#"><img src="./assets/icons/social(4).svg" alt="social" /></a>
+                  <a href="#"><img src="./assets/icons/social(3).svg" alt="social" /></a>
+                  <a href="#"><img src="./assets/icons/social(2).svg" alt="social" /></a>
+                  <a href="#"><img src="./assets/icons/social(1).svg" alt="social" /></a>
                </div>
             </div>
          </div>
-      </div>
-      <script src="./index.js"></script>
+         <div class="container footer__bottom">
+            <p class="footer__copyright">© 2022 Shkeeper. All rights reserved.</p>
+         </div>
+      </footer>
    </body>
 </html>
