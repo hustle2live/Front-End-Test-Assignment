@@ -1,4 +1,4 @@
-@media (max-width: 560px) {
+@media (max-width: 768px) {
    html {
       font-size: 14px;
    }
@@ -7,6 +7,13 @@
       max-width: 100%;
       box-sizing: border-box;
       padding: 0 0.875rem;
+   }
+
+   .section__title,
+   .section__description {
+      max-width: 90%;
+      margin-right: auto;
+      margin-left: auto;
    }
 
    .section,
@@ -130,5 +137,82 @@
       left: -5%;
    }
    .elipse-left-top {
+   }
+
+   .plans__cards-grid,
+   .story__cards-grid {
+      max-width: 100%;
+      justify-items: center;
+      grid-template-columns: 1fr;
+   }
+
+   .story__card {
+      flex-direction: column;
+      width: 80%;
+   }
+
+   .story__image {
+      width: 60%;
+      margin: auto;
+   }
+
+   .cta {
+      overflow: visible;
+      width: 80%;
+      height: auto;
+      box-sizing: border-box;
+   }
+
+   .cta__title {
+      line-height: 100%;
+   }
+
+   .cta__image-question {
+      z-index: 1;
+      top: 10px;
+      right: -5%;
+      width: 70px;
+      height: auto;
+   }
+
+   .cta__image-question:first-of-type {
+      display: none;
+   }
+
+   .cta__image-message {
+      top: unset;
+      right: unset;
+      bottom: 20%;
+      left: 4%;
+      width: 70px;
+      height: 70px;
+      transform: rotate(-24deg);
+   }
+
+   .plan__card {
+      width: 300px;
+      max-width: 90%;
+      box-sizing: border-box;
+      gap: 0.64rem;
+   }
+
+   .plan__price {
+      line-height: normal;
+   }
+
+   .plan__icon {
+      width: 130px;
+   }
+
+   .plan__card:nth-child(2) .plan__icon {
+      width: 90px;
+   }
+
+   .plan__card:nth-child(3) .plan__icon {
+      width: 65px;
+   }
+
+   .plan__card .plan__heading {
+      margin: 2rem 0 1rem;
    }
 }

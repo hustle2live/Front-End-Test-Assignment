@@ -9,7 +9,7 @@
       <script src="script.js" type="text/javascript" defer></script>
    </head>
    <body>
-      <header class="header container">
+      <header id="top" class="header container">
          <div class="header__menu">
             <div class="header__logo-container">
                <a href="/" class="header__logo-link">
@@ -81,8 +81,8 @@
          <img src="./assets/images/ellipse-1.png" alt="elipse" class="elipse elipse-left-top" />
       </header>
 
-      <main hidden>
-         <section class="section story">
+      <main>
+         <section id="story" class="section story">
             <p class="section__title">How to Use SHKeeper?</p>
             <p class="section__description">
                SHKeeper equips you with extra efficiency in integrating crypto payment service with any other existing
@@ -208,7 +208,7 @@
             <div class="plans__bg-abstract"></div>
          </section>
 
-         <section class="section container about">
+         <section hidden class="section container about">
             <p class="section__title">About SHKeeper</p>
             <article class="about__article">
                <div class="about__image">
@@ -235,7 +235,7 @@
             <img src="./assets/images/ellipse.svg" alt="elipse" class="elipse about__elipse-sm" />
          </section>
 
-         <section class="section roadmap">
+         <section hidden class="section roadmap">
             <p class="section__title">Road Map</p>
             <div class="roadmap__container">
                <div class="roadmap__section">
@@ -271,7 +271,7 @@
             </div>
          </section>
 
-         <section class="section questions">
+         <section hidden class="section questions">
             <p class="section__title">FAQ</p>
             <ul class="questions__list">
                <li class="questions__item">
@@ -343,7 +343,7 @@
             </ul>
          </section>
 
-         <section class="section cta">
+         <section id="cta" class="section cta">
             <p class="cta__title">WOULD YOU LIKE TO ASK A QUESTION?</p>
             <p class="cta__text">Leave us a message & we will reply shortly.</p>
             <p class="cta__text">Support available</p>
@@ -356,7 +356,7 @@
             </div>
          </section>
 
-         <section class="section feedback">
+         <section hidden class="section feedback">
             <p class="section__title">Send us a message</p>
             <form class="feedback__form" autocomplete="on">
                <input
