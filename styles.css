@@ -311,7 +311,6 @@ button {
    border-radius: 22px;
    background: rgba(242, 242, 242, 0.02);
    backdrop-filter: blur(10px);
-
 }
 
 .header__card {
@@ -630,11 +629,10 @@ button {
    margin-bottom: 1.4rem;
    gap: 2.5rem;
 }
-.about__article div {
-   width: 50%;
-}
 
-.about__image {
+.about__image,
+.about__content {
+   width: 50%;
 }
 
 .about__content {

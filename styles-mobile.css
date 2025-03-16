@@ -1,9 +1,14 @@
 @media (max-width: 768px) {
+   :root {
+      --section-content: 90%;
+   }
+
    html {
       font-size: 14px;
    }
 
    .container {
+      overflow: hidden;
       max-width: 100%;
       box-sizing: border-box;
       padding: 0 0.875rem;
@@ -16,10 +21,15 @@
       margin-left: auto;
    }
 
-   .section,
+   .section__title {
+      font-size: 1.715rem;
+   }
+
+   /* .section, */
+   /* body { */
    .footer,
    .header {
-      overflow: hidden;
+      /* overflow-x: hidden; */
    }
 
    .container {
@@ -165,6 +175,7 @@
 
    .cta__title {
       line-height: 100%;
+      font-size: 1.575rem;
    }
 
    .cta__image-question {
@@ -189,15 +200,26 @@
       transform: rotate(-24deg);
    }
 
+   .section {
+      overflow: visible;
+   }
+
    .plan__card {
       width: 300px;
       max-width: 90%;
       box-sizing: border-box;
       gap: 0.64rem;
+      grid-row: auto;
    }
 
    .plan__price {
       line-height: normal;
+      font-size: 2.75rem;
+   }
+
+   .plan__description li {
+      line-height: 1.3;
+      margin: 8px 0;
    }
 
    .plan__icon {
@@ -214,5 +236,149 @@
 
    .plan__card .plan__heading {
       margin: 2rem 0 1rem;
+   }
+
+   .plan__button {
+      padding: 0.875rem 0;
+      font-size: 0.875rem;
+   }
+
+   .about__article {
+      flex-direction: column;
+   }
+
+   .about__image {
+      align-self: center;
+   }
+
+   .about__image img,
+   .about__image,
+   .about__content {
+      width: 100%;
+      max-width: 90%;
+      padding: 0;
+   }
+
+   .roadmap__container {
+      flex-direction: column;
+      width: 90%;
+      gap: 2.5rem;
+   }
+   .roadmap__section:nth-child(3) {
+      top: 25%;
+      left: 55%;
+   }
+
+   .roadmap__line {
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+   }
+
+   .roadmap .roadmap__section {
+      justify-content: flex-start;
+      width: 45%;
+      height: 25%;
+      padding-top: 10px;
+      margin: 0 0 0.5rem;
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.34);
+   }
+
+   .roadmap__section:nth-child(3),
+   .roadmap__section:nth-child(4),
+   .roadmap__section:nth-child(5) {
+      justify-content: flex-end;
+      padding-bottom: 10px;
+      border-top: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+   }
+
+   .roadmap__section:nth-child(4),
+   .roadmap__section:nth-child(5) {
+      align-self: flex-end;
+      margin: 0.5rem 0 0;
+   }
+
+   .roadmap__section-text {
+      max-width: unset;
+   }
+
+   .roadmap__point {
+      top: 0;
+      left: unset;
+   }
+
+   .roadmap__point:nth-last-child(2) {
+      top: 25%;
+   }
+   .roadmap__point:nth-last-child(3) {
+      top: 50%;
+   }
+   .roadmap__point:nth-last-child(4) {
+      top: 75%;
+   }
+   .roadmap__point:nth-last-child(5) {
+      top: 100%;
+   }
+   .questions__item {
+      height: 50px;
+   }
+   .questions__item.active {
+      height: 200px;
+   }
+   .questions__title {
+      display: flex;
+      align-items: center;
+      max-width: 85%;
+      min-height: 50px;
+      line-height: 20px;
+      font-size: 0.875rem;
+   }
+
+   .questions__title span {
+      z-index: -1;
+      display: block;
+   }
+
+   .feedback {
+      padding: 0 0 3rem !important;
+   }
+
+   .feedback .section__title {
+      margin-bottom: 50px;
+   }
+
+   .feedback__form {
+      width: 80%;
+   }
+   .form__button {
+      padding: 0.5rem 2rem;
+   }
+
+   .footer__content {
+      padding: 20px 20px 60px;
+      grid-template-columns: 55% 45%;
+      row-gap: 1.8rem;
+   }
+
+   .footer__content-section:first-of-type {
+      order: -2;
+   }
+   .footer__content-section:last-of-type {
+      order: -1;
+      padding-top: 3.2rem;
+   }
+
+   .footer__content-section:first-of-type p {
+      width: auto;
+      max-width: 85%;
+   }
+   .footer__bottom {
+      padding: 2rem 20px;
+   }
+   .footer__logo {
+      width: 130px;
    }
 }
