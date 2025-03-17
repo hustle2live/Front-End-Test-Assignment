@@ -25,6 +25,8 @@
    --section-content: 820px;
 }
 
+/* General styles */
+
 html {
    line-height: 100%;
    scroll-behavior: smooth;
@@ -91,24 +93,22 @@ body::-webkit-scrollbar {
    width: 0.5rem;
 }
 
-/* Track */
 body::-webkit-scrollbar-track {
    background: var(--primary-dark);
 }
 
-/* Handle */
 body::-webkit-scrollbar-thumb {
    border: 1px solid var(--primary-color);
    border-radius: 5px;
    background: #486b79;
 }
 
-/* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
    border: 2px solid var(--primary-color);
    opacity: 1;
    background: var(--primary-color);
 }
+
 /* Common styles */
 
 .cta,
@@ -218,10 +218,6 @@ button {
    margin-bottom: -10px;
 }
 
-.header__logo-link {
-   /* Logo link styles */
-}
-
 .header__logo-image {
    width: auto;
    height: 45px;
@@ -236,11 +232,6 @@ button {
    margin: 0;
    list-style: none;
    gap: 3rem;
-}
-
-.header__nav-item {
-   /* display: block; */
-   /* margin-left: 20px; */
 }
 
 .header__nav-link {
@@ -262,9 +253,6 @@ button {
    line-height: 100%;
    padding: 0 1.65rem;
    font-weight: 100;
-}
-
-.header__button:hover {
 }
 
 .header__content {
@@ -484,8 +472,6 @@ button {
    width: 72%;
    height: auto;
 }
-.story__content {
-}
 
 .story__content-title {
    line-height: 1.35;
@@ -498,11 +484,6 @@ button {
 }
 
 /* ------ Plans-section styles --------------------- */
-
-.section {
-}
-.container {
-}
 
 .plans {
    position: relative;
@@ -517,9 +498,6 @@ button {
    background: rgba(89, 149, 255, 0.77);
    content: '';
    filter: blur(290px);
-}
-
-.section__title {
 }
 
 .plans__cards-grid {
@@ -679,12 +657,6 @@ button {
 
 /* Roadmap section  */
 
-.section {
-}
-.roadmap {
-}
-.section__title {
-}
 .roadmap__container {
    position: relative;
    flex-flow: row wrap;

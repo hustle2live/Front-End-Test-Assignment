@@ -5,9 +5,7 @@ const questionList = document.querySelector('.questions__list');
 const handleQuestionExpand = async (e) => {
    e.preventDefault();
    const { target } = e;
-   // if (!target.className.includes('questions__title')) {
-   //    return;
-   // }
+
    if (target.parentNode.className.includes('active')) {
       target.parentNode.classList.remove('active');
       return;
