@@ -31,7 +31,6 @@ html {
    line-height: 100%;
    scroll-behavior: smooth;
    color: var(--light);
-   letter-spacing: 0%;
    font-family: Raleway, sans-serif;
    font-size: 16px;
    font-style: italic;
@@ -273,7 +272,6 @@ button {
 .header__text {
    line-height: 1.625rem;
    color: var(--light-muted);
-   letter-spacing: 0%;
    font-weight: 400;
 }
 
