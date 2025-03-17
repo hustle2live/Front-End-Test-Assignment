@@ -7,11 +7,17 @@
       font-size: 14px;
    }
 
+   main {
+   }
+
    .container {
       overflow: hidden;
-      max-width: 100%;
       box-sizing: border-box;
       padding: 0 0.875rem;
+   }
+
+   section {
+      overflow: hidden;
    }
 
    .section__title,
@@ -112,7 +118,7 @@
    .header__background {
       top: 0;
       left: 0;
-      overflow: visible;
+      /* overflow: visible; */
       width: 100%;
       height: 100%;
       background-position: right 12%;
@@ -167,7 +173,7 @@
    }
 
    .cta {
-      overflow: visible;
+      /* overflow: visible; */
       width: 80%;
       height: auto;
       box-sizing: border-box;
@@ -201,7 +207,7 @@
    }
 
    .section {
-      overflow: visible;
+      /* overflow: visible; */
    }
 
    .plan__card {
@@ -257,6 +263,18 @@
       width: 100%;
       max-width: 90%;
       padding: 0;
+   }
+
+   .about__elipse-xs,
+   .about__elipse-sm {
+      right: 10%;
+      margin-top: 25%;
+   }
+
+   .about,
+   .plans,
+   .roadmap {
+      padding-bottom: 80px;
    }
 
    .roadmap__container {
@@ -322,6 +340,11 @@
    .roadmap__point:nth-last-child(5) {
       top: 100%;
    }
+
+   .roadmap__bg-abstract {
+      max-width: 100%;
+   }
+
    .questions__item {
       height: 50px;
    }
@@ -331,23 +354,20 @@
    .questions__title {
       display: flex;
       align-items: center;
-      max-width: 85%;
       min-height: 50px;
       line-height: 20px;
       font-size: 0.875rem;
    }
 
-   .questions__title span {
-      z-index: -1;
-      display: block;
-   }
-
    .feedback {
-      padding: 0 0 3rem !important;
+      padding: 40px 0 20px !important;
+      margin-bottom: 80px;
+      border-radius: 1.25rem;
    }
 
    .feedback .section__title {
       margin-bottom: 50px;
+      font-size: 1.5rem;
    }
 
    .feedback__form {
@@ -369,6 +389,11 @@
    .footer__content-section:last-of-type {
       order: -1;
       padding-top: 3.2rem;
+   }
+
+   .footer__content-section:last-of-type .footer__title {
+      line-height: normal;
+      margin-bottom: 1rem;
    }
 
    .footer__content-section:first-of-type p {

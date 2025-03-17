@@ -2,23 +2,27 @@ const allTitleNodes = document.querySelectorAll('.questions__title');
 
 const questionList = document.querySelector('.questions__list');
 
-const handleQuestionExpand = (e) => {
+const handleQuestionExpand = async (e) => {
    e.preventDefault();
    const { target } = e;
-   const { className, parentNode } = target;
-   const isTitle = className.includes('questions__title');
-   if (!isTitle) return;
-   if (parentNode.className.includes('active')) {
-      return parentNode.classList.remove('active');
+   // if (!target.className.includes('questions__title')) {
+   //    return;
+   // }
+   if (target.parentNode.className.includes('active')) {
+      target.parentNode.classList.remove('active');
+      return;
    }
+
    const activeElement = document.querySelector('.questions__item.active');
-   parentNode.classList.add('active');
+
    if (activeElement) {
       activeElement.classList.remove('active');
    }
+
+   target.parentNode.classList.add('active');
 };
 
-questionList.addEventListener('click', handleQuestionExpand);
+questionList.addEventListener('click', (e) => handleQuestionExpand(e));
 
 // const formElement = document.querySelector('.feedback__form');
 
