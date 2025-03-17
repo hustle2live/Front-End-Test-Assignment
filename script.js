@@ -21,13 +21,3 @@ const handleQuestionExpand = async (e) => {
 };
 
 questionList.addEventListener('click', (e) => handleQuestionExpand(e));
-
-// const formElement = document.querySelector('.feedback__form');
-
-// formElement.addEventListener('submit', (e) => {
-//    e.preventDefault();
-//    const invalidAll = document.querySelectorAll('invalid');
-
-//    console.log('submit');
-//    console.log(invalidAll);
-// });
